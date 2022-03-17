@@ -8,7 +8,7 @@ html {
 
 .parallax {
     background-image: url("../images/nature-bg.jpg");
-    height: 500px;
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -26,16 +26,36 @@ html {
 }
 
 .section {
-    height: 300px;
-    background-color: yellow;
+    height: 450px;
+    background-color: rgba(85, 161, 211, 0.219);
+    padding: 50px;
+}
+
+.section-header-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .section-header {
     color: black;
+    text-align: center;
+    margin: 0;
+    font-family: 'Ma Shan Zheng', cursive;
+    /* font-size: 50px; */
 }
 
+/* gallery carousel */
+.slides-img {
+    height: inherit;
+    width: 100%;
+}
 
-
+.inner-img {
+    max-height: 100%;
+    max-width: 100%;
+    padding:20px;
+    border-radius: 50px!important;
+}
 
 
 /* animation */
@@ -43,21 +63,20 @@ html {
     animation: pop-in .6s ease-out forwards;
 }
 
-
-
-
-
-
-
-
-
 @keyframes pop-in {
     0% {
-      opacity: 0;
-      transform: translateY(-4rem) scale(.8);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
   }
+
+
+
+
+
+
+
+
+  
