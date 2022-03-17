@@ -1,6 +1,7 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const sectionHeader = entry.target.querySelector(".section-header")
+        console.log(sectionHeader)
 
         if (entry.isIntersecting) {
             sectionHeader.classList.add("animate-pop-in")
@@ -11,4 +12,10 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-observer.observe(document.querySelector(".section-header-div"))
+
+let target = ".section-header-div"
+document.querySelectorAll(target).forEach((i) => {
+    if (i) {
+        observer.observe(i)
+    }
+})
