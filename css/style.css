@@ -1,7 +1,10 @@
 .parallax {
-    background-image: url("");
+    background-image: url("../images/nature-bg.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+body {
+    background-color: red;
 }
