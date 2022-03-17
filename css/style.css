@@ -1,10 +1,63 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+.navbar-brand {
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
 .parallax {
     background-image: url("../images/nature-bg.jpg");
-    min-height: 500px;
+    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
-body {
-    background-color: red;
+
+#banner-title {
+    position: absolute;
+    color: white;
+    top:50%;
+    left:50%; 
+    text-align:center;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 100px;
 }
+
+.section {
+    height: 300px;
+    background-color: yellow;
+}
+
+.section-header {
+    color: black;
+}
+
+
+
+
+
+/* animation */
+.animate-pop-in {
+    animation: pop-in .6s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+@keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
