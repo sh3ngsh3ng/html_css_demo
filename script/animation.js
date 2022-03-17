@@ -19,3 +19,4 @@ document.querySelectorAll(target).forEach((i) => {
         observer.observe(i)
     }
 })
+
