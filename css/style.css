@@ -247,3 +247,30 @@ p#copyright-text {
     }
   }
   
+
+
+
+
+  /* start of map-page */
+#map-page {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.initial-hide {
+    transform:translateX(-100%)
+}
+
+.hide-page {
+    transition: 1s;
+    transform:translateX(-100%);
+    transition-timing-function: ease-in-out;
+}
+
+
+.show-page {
+    transition: 1s;
+    transform: translateX(0);
+    transition-timing-function: ease-in-out;
+}

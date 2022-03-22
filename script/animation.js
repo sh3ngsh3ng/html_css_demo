@@ -43,3 +43,7 @@ document.querySelectorAll(target2).forEach((i) => {
         observer2.observe(i)
     }
 })
+
+
+// SPA JVS
+
