@@ -151,13 +151,22 @@ footer a {
     margin: 0;
 }
 
-
 /* about us section */
-#aboutus-header-text {
+#aboutus-footer-header {
     margin-top: 5vh;
     margin-left: 8vw;
 }
 
+#aboutus-footer-text-div {
+    margin-left: 8vw;
+    padding-right: 50px;
+}
+
+#aboutus-footer-text {
+    color: rgb(126, 117, 117);
+}
+
+/* copyright section */
 #copyright-div {
     display: flex;
     justify-content: center;
@@ -171,6 +180,8 @@ p#copyright-text {
 }
 
 /* end of footer */
+
+
 
 /* start of start button */
 #start-btn {
