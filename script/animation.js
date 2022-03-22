@@ -1,7 +1,6 @@
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const sectionHeader = entry.target.querySelector(".section-header")
-        console.log(sectionHeader)
 
         if (entry.isIntersecting) {
             sectionHeader.classList.add("animate-pop-in")
@@ -17,7 +16,7 @@ const observer = new IntersectionObserver(entries => {
 const observer2 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
 
-        const contentContainer = entry.target.querySelector(".test")
+        const contentContainer = entry.target.querySelector(".content-container-inner")
 
         console.log(contentContainer)
 
@@ -27,7 +26,7 @@ const observer2 = new IntersectionObserver(entries => {
         }
 
 
-        // sectionHeader.classList.remove("animate-pop-in")
+        contentContainer.classList.remove("fade-in")
     })
 })
 
@@ -38,7 +37,7 @@ document.querySelectorAll(target).forEach((i) => {
     }
 })
 
-let target2 = ".content-container"
+let target2 = ".animation-wrapper"
 document.querySelectorAll(target2).forEach((i) => {
     if (i) {
         observer2.observe(i)
