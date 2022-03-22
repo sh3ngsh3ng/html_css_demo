@@ -274,3 +274,8 @@ p#copyright-text {
     transform: translateX(0);
     transition-timing-function: ease-in-out;
 }
+
+#back-btn {
+    position: absolute;
+    z-index: 30000;
+}

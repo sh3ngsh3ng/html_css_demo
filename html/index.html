@@ -16,7 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 
-
+    <!-- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
     
     <title>The Galleria</title>
 </head>
@@ -152,8 +159,9 @@
 
   <!-- start of map-page -->
   <div id="map-page" class="initial-hide">
-    <h1 style="color: white">HI TESTSETSETSETSETSETSETSET</h1>
-    <button id="back-btn"class="btn btn-primary"></button>
+    <button id="back-btn"class="btn btn-primary">Back</button>
+    <div id="map" style="height: 100vh"></div>
+    
   </div>
   
 
@@ -177,7 +185,10 @@
 
     <!-- animation script -->
     <script src="../script/animation.js" ></script>
-    
+
+
+    <!-- map script -->
+    <script src="../script/map.js"></script>
 
     
 </body>
