@@ -284,3 +284,7 @@ p#copyright-text {
 .clear-bottom {
     overflow: hidden;
 }
+
+form {
+    padding: 50px;
+}
