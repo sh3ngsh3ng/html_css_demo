@@ -1,6 +1,6 @@
-// window.addEventListener("DOMContentLoaded", () => {
-//     alert("NOTE: This page is developed only in 1024 by 786")
-// })
+window.addEventListener("DOMContentLoaded", () => {
+    alert("NOTE: This page is developed only in 1024 by 786")
+})
 
 // swap to map page
 document.querySelector("#start-btn").addEventListener("click", () => {
