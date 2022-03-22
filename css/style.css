@@ -124,10 +124,13 @@ footer {
 
 #social-icons-div {
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
-
+.social-icons {
+    height: 20px;
+    margin-right: 8px;
+}
 
 #navigation-header-text {
     margin-top: 5vh;
