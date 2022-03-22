@@ -1,0 +1,33 @@
+.section {
+    height: 450px;
+    background-color: rgba(85, 161, 211, 0.219);
+    padding: 50px;
+}
+
+.section-header-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:aliceblue;
+}
+
+.section-header {
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-family: 'Ma Shan Zheng', cursive;
+    background-color:aliceblue;
+    /* font-size: 50px; */
+}
+
+/* gallery carousel */
+.slides-img {
+    height: inherit;
+    width: 100%;
+}
+
+.inner-img {
+    max-height: 100%;
+    max-width: 100%;
+    padding:20px;
+    border-radius: 50px!important;
+}
