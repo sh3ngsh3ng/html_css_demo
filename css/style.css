@@ -67,12 +67,14 @@ html {
 
 
 .content-container {
+    display: hidden;
     height: 70vh;
     width: 90vw;
     margin-left: 5vw;
     margin-top: 3vh;
     background-color: rgba(255, 255, 255, 0.411);
     border-radius: 10px;
+    /* transform: translateX(-100vw); */
 }
 
 /* start of section 1 */
@@ -220,7 +222,21 @@ p#copyright-text {
 	}
   }
 
+.fade-in {
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+}
 
-
-
+@keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
   
