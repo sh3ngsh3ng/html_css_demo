@@ -4,12 +4,13 @@ const observer = new IntersectionObserver(entries => {
 
         if (entry.isIntersecting) {
             sectionHeader.classList.add("animate-pop-in")
-            contentContainer.classList.add("slide-in")
+            
             return
         }
 
 
         sectionHeader.classList.remove("animate-pop-in")
+        
     })
 })
 
@@ -22,13 +23,16 @@ const observer2 = new IntersectionObserver(entries => {
 
         if (entry.isIntersecting) {
             contentContainer.classList.add("fade-in")
+            // document.querySelector("#scroll-up-icon").style.display=("block")
             return
         }
 
 
         contentContainer.classList.remove("fade-in")
+        // document.querySelector("#scroll-up-icon").style.display=("none")
     })
 })
+
 
 let target = ".section-header-div"
 document.querySelectorAll(target).forEach((i) => {
@@ -45,5 +49,18 @@ document.querySelectorAll(target2).forEach((i) => {
 })
 
 
+const observer3 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        
+        if (entry.isIntersecting) {
+            document.querySelector("#scroll-up-icon").style.display=("block")
+            return
+        }
+
+        document.querySelector("#scroll-up-icon").style.display=("none")
+    })
+})
+
+observer3.observe(document.querySelector("#section1"))
 // SPA JVS
 

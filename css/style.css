@@ -247,8 +247,19 @@ p#copyright-text {
     }
   }
   
+/* start of scroll up button */
+#fixedbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    z-index: 1000;
+}
 
-
+#scroll-up-icon {
+    height: 10vh;
+    padding: 10px;
+}
+/* end of scroll up button */
 
 
   /* start of map-page */
