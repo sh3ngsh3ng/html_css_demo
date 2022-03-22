@@ -107,11 +107,49 @@ html {
 footer {
     transform: translateY(100vh);
     background-color: #282d32;
+    height: 25vh;
+    color: white;
 }
 
 #footer-div {
     display: flex;
-    
+    height: 22vh;
+}
+
+
+#social-header-text {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#social-icons-div {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#navigation-header-text {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+
+#aboutus-header-text {
+    margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+#copyright-div {
+    display: flex;
+    justify-content: center;
+    height: 3vh;
+}
+
+p#copyright-text {
+    font-family: niveau-grotesk,sans-serif;
+    font-size: 15px;
+    color: #a7aaa8;
 }
 
 /* end of footer */
